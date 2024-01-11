@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pure platform movie library</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./editMovie.js" defer type="module"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <img src="./images/pure_logo.png" alt="pure platform logo" class="logo" />
+       <a href="./movies.html">movies</a>
+    </nav>
+    <form class="form">
+      <p class="edit-title"></p>
+      <div class="info">  
+      <label for="title">Movie Title</label>
+      <input type="text" id="title" />
+      <label id="description-label" for="description">Movie Description</label>
+      <textarea id="description" cols="50" rows="10"></textarea>
+      <label for="year">Release year </label>
+      <input type="number" id="year" />
+      <label for="genre">Movie Genre </label>
+      <input type="text" id="genre" />
+      <label for="poster">Movie poster url </label>
+      <input type="text" id="poster" />
+      </div>
+      <div class="directors">
+        <div class="director">
+          <label label>Movie Director</label>
+          <input type="text" />
+        </div>
+        <button type="button">Add More Directors</button>
+      </div>
+      <div class="cast">
+        <div class="cast-member">
+          <label>Cast Member Name</label>
+          <input type="text" class="name" />
+          <label>Cast Member Age</label>
+          <input type="number" class="age" />
+          <label>Country Of Origin</label>
+          <input type="text" class="country" />
+        </div>
+        <button type="button" id="add-cast">Add More Cast Member</button>
+      </div>
+      <button type="submit" class="submit">Edit The Movie</button>
+    </form>
+    
+    </div>
+  </body>
+</html>

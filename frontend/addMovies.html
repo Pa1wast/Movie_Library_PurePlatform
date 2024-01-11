@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pure platform movie library</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./addMovies.js" defer type="module"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="./movies.html">&larr; movies</a>
+      <img src="./images/video.png" alt="icon" class="logo" />
+    </nav>
+    <form class="form">
+      <p>Add a new movie</p>
+      <div class="info">  
+      <label for="title">Movie Title</label>
+      <input type="text" id="title" />
+      <label id="description-label" for="description">Movie Description</label>
+      <textarea id="description" cols="50" rows="10"></textarea>
+      <label for="year">Release year </label>
+      <input type="number" id="year" />
+      <label for="genre">Movie Genre </label>
+      <input type="text" id="genre" />
+      <label for="poster">Movie poster url </label>
+      <input type="text" id="poster" />
+      </div>
+
+      
+      <div class="directors">
+        <div class="director">
+          <label label>Directors</label>
+          <input type="text" />
+        </div>
+        <button type="button">Add directors</button>
+      </div>
+
+      <div class="cast">
+        <div class="cast-member">
+          <div>
+
+            <label>Name</label>
+            <input type="text" class="name" />
+          </div>
+
+          <div>
+
+            <label>Age</label>
+            <input type="number" class="age" />
+          </div>
+
+          <div>
+            <label>Country</label>
+            <input type="text" class="country" />
+          </div>
+        </div>
+        <button type="button" id="add-cast">Add member</button>
+      </div>
+
+
+  
+      <button type="submit" class="submit">Add to library</button>
+    </form>
+    
+    </div>
+  </body>
+</html>
+
